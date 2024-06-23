@@ -1,0 +1,42 @@
+    int toplama;
+    int cıkarma;
+    int carpma;
+    int bolme;
+    private void Form1_Load(object sender, EventArgs e)
+    {
+
+    }
+
+    private void button3_Click(object sender, EventArgs e)
+    {
+      int  a= Convert.ToInt32(textBox1.Text);
+       int b  = Convert.ToInt32(textBox2.Text);
+        toplama = a + b;
+        listBox1.Items.Add(toplama);
+    }
+
+    private void button4_Click(object sender, EventArgs e)
+    {
+        int a = Convert.ToInt32(textBox1.Text);
+        int b = Convert.ToInt32(textBox2.Text);
+        cıkarma = a - b;
+        listBox1.Items.Add(cıkarma);
+    }
+
+    private void button1_Click(object sender, EventArgs e)
+    {
+        int a= Convert.ToInt32(textBox1.Text);
+        int b = Convert.ToInt32(textBox2.Text);
+        carpma = a * b;
+        listBox1.Items.Add(carpma);
+    }
+
+    private void button2_Click(object sender, EventArgs e)
+    {
+
+        int a = Convert.ToInt32(textBox1.Text);
+        int b = Convert.ToInt32(textBox2.Text);
+        bolme = a / b;
+        listBox1.Items.Add(bolme);
+    }
+}
